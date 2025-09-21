@@ -6,6 +6,10 @@
 	<meta name="viewport"
 		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	<link rel="stylesheet" href="/front/assets/style.css">
 	<title>Marvel Fanatics</title>
 </head>
@@ -13,16 +17,62 @@
 <body class="container">
 	<div class="flex-container-header">
 		<ul class="flex-container-header">
-			<li><a href="index.html">MARVEL FANATICS</a></li>
-			<li><a href="trailers">Trailers</a></li>
-			<li><a href="filmes">Filmes</a></li>
-			<li><a href="series">Séries</a></li>
-			<li><a href="lancamentos">Lançamentos</a></li>
-			<li><a href="comentarios">Comentários</a></li>
+			<li><a href="index.html"><strong>MARVEL FANATICS</strong></a></li>
+			<li><a href="trailers"><small>Trailers</small></a></li>
+			<li><a href="filmes"><small>Filmes</small></a></li>
+			<li><a href="series"><small>Séries</small></a></li>
+			<li><a href="lancamentos"><small>Lançamentos</small></a></li>
+			<li><a href="comentarios"><small>Comentários</small></a></li>
 		</ul>
 	</div>
+	<div class="card">
+		<div class="card-body">
+			<h3 class="card-title"><strong>Marvel Zumbis: O Pesadelo dos Super-Heróis</strong></h3>
+			<p class="card-text"><strong>Prepare-se para ver seus heróis favoritos como nunca
+					antes! Em Marvel Zumbis, uma misteriosa praga transforma os maiores
+					super-heróis da Terra em mortos-vivos sedentos por carne humana.</strong>
+			</p>
+			<p class="card-text"><small><em>Nesta animação dark e
+						visceral, testemunhe um universo alternativo onde os Vingadores, X-Men
+						e Quarteto Fantástico se tornam a maior ameaça à humanidade. Entre gore,
+						ação frenética e reviravoltas chocantes, alguns heróis ainda resistem
+						para salvar o que resta da civilização.</em></small>
+			</p>
+		</div>
+		<iframe width="800" height="400" src="https://www.youtube.com/embed/82l_6yI9f6A?autoplay=1&mute=1"
+			title="Marvel Zumbis | Trailer Oficial Dublado | Disney+" frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+		</iframe>
+		<!-- </div> -->
+	</div>
 	<div class="flex-container">
-		<div>1</div>
+		<div>
+			<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo_4akQC54yAfXbUjnM7fzAvjtbQDLG6otJA&s?text=Slide+1" class="d-block w-100"
+							alt="Slide 1">
+					</div>
+					<div class="carousel-item">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLFhItn1UUsLAku2Rcbg0xMrHfdT4Wt-WPYw&s?text=Slide+2" class="d-block w-100"
+							alt="Slide 2">
+					</div>
+					<div class="carousel-item">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_G_ELfsp2ZkrzYzWVIKk_ulDYYLfvxOsqJw&s?text=Slide+3" class="d-block w-100"
+							alt="Slide 3">
+					</div>
+				</div>
+
+				<!-- Setas de navegação -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</button>
+			</div>
+		</div>
 		<div>2</div>
 		<div>3</div>
 	</div>
@@ -41,11 +91,13 @@
 		<div>2</div>
 		<div>3</div>
 	</div>
-	<div class="flex-container">
-		<div>1</div>
-		<div>2</div>
-		<div>3</div>
-	</div>
+	<script>
+		// Autoplay automático a cada 3 segundos
+		const carousel = new bootstrap.Carousel('#myCarousel', {
+			interval: 3000,  // 3 segundos
+			wrap: true       // Volta ao primeiro slide
+		});
+	</script>
 </body>
 
 </html>
