@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Google fonts -->
+	<link rel="stylesheet" href="/front/assets/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
+	<title>Marvel Fanatics</title>
+</head>
+
+<body class="container">
+	<div class="flex-container-header">
+		<ul class="flex-container-header">
+			<li><a href="../index.html"><strong>MARVEL FANATICS</strong></a></li>
+			<li><a href="trailers.html"><small>Trailers / Teasers</small></a></li>
+			<li><a href="filmes.html"><small>Filmes</small></a></li>
+			<li><a href="series.html"><small>Séries</small></a></li>
+			<li><a href="lancamentos.html"><small>Lançamentos</small></a></li>
+			<li><a href="comentarios.html"><small>Comentários</small></a></li>
+		</ul>
+	</div>
+	<div class="card">
+		<div class="card-body">
+			<h3 class="card-title"><strong>🧟‍♂️ Marvel Zumbis: O Pesadelo dos Super-Heróis</strong></h3>
+			<p class="card-text"><strong>Prepare-se para ver seus heróis favoritos como nunca
+					antes! Em Marvel Zumbis, uma misteriosa praga transforma os maiores
+					super-heróis da Terra em mortos-vivos sedentos por carne humana.</strong>
+			</p>
+			<p class="card-text"><small><em>Nesta animação dark e
+						visceral, testemunhe um universo alternativo onde os Vingadores, X-Men
+						e Quarteto Fantástico se tornam a maior ameaça à humanidade. Entre gore,
+						ação frenética e reviravoltas chocantes, alguns heróis ainda resistem
+						para salvar o que resta da civilização.</em></small>
+			</p>
+		</div>
+		<iframe class="iframeCard" width="800" height="400"
+			src="https://www.youtube.com/embed/82l_6yI9f6A?autoplay=1&mute=1"
+			title="Marvel Zumbis | Trailer Oficial Dublado | Disney+" frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+		</iframe>
+	</div>
+	<script>
+		// Inicializa todos os carousels automaticamente
+		document.querySelectorAll('.carousel').forEach(function (carouselElement) {
+			new bootstrap.Carousel(carouselElement, {
+				interval: 3000,  // 3 segundos
+				wrap: true       // Volta ao primeiro slide
+			});
+		});
+	</script>
+</body>
+
+</html>

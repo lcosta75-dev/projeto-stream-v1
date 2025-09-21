@@ -46,14 +46,13 @@ ul li a:hover {
     color: #725de7;
 }
 
-.flex-container {
+.flex-container-trailers {
     display: flex;
     flex-direction: row;
     /* deixa todos os elementos na mesma linha*/
     flex-wrap: wrap;
     justify-content: space-around;
-    color: white;
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 
 .card {
@@ -93,8 +92,7 @@ ul li a:hover {
     border-radius: 8px; /* Bordas arredondadas */
 }
 
-.trailers {
-    padding-left: 10px;
+.titulos-trailers {
     font-family: "Alan Sans", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
@@ -103,7 +101,6 @@ ul li a:hover {
 }
 
 .trailers-text {
-    padding-left: 10px;
     font-family: "Alan Sans", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
@@ -130,16 +127,8 @@ ul.ul-lista {
     padding-left: 20px;
 }
 
-.div-teaser {
-    /* border: solid 1px green; */
-}
-
 strong.p-teaser {
     color: #725de7;
-}
-
-.div-trailer {
-    /* border: solid 1px orange; */
 }
 
 strong.p-trailer {
@@ -148,6 +137,34 @@ strong.p-trailer {
 
 strong.p-dica {
     color: #725de7;
+}
+
+.flex-container-filmes {
+    margin: 0;
+    box-sizing: 0;
+    display: flex;
+    flex-direction: row;
+    /* deixa todos os elementos na mesma linha*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* color: white; */
+    border: solid 1px yellow;
+}
+
+.titulos-filmes {
+    font-family: "Alan Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    color: #725de7;
+    opacity: 50%;
+}
+
+.filmes-text {
+    font-family: "Alan Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    color: rgb(177, 175, 175);
+    opacity: 50%;
 }
 
 
