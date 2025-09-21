@@ -1,2 +1,24 @@
+# Chaves SSH
 lcosta-dev
-.pub
+lcosta-dev.pub
+
+# Outros arquivos SSH que podem ser criados
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+id_ecdsa*
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração sensíveis
+.env
+config.ini
+
+# Node modules (se usar Node.js)
+node_modules/
+
+# Logs
+*.log
