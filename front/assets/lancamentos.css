@@ -1,0 +1,76 @@
+#lancamentos {
+  padding-top: 20px;
+}
+
+.flex-container-lancamentos {
+  display: flex;
+  flex-direction: row;       
+  flex-wrap: nowrap;   
+  /* Distribui espaço ao redor de todas as divs */
+  justify-content: space-around; 
+  /* Adiciona espaço uniforme entre todas */        
+  gap: 15px;                     
+}
+
+.flex-container-lancamentos > div {
+  /* quebra em 4 colunas */ /* Diminuí um pouco para dar mais espaço */
+  width: 22%;   
+  /* Padding interno uniforme */                 
+  padding: 10px; 
+  /* Justifica o texto */                
+  text-align: justify;           
+}
+
+.p-titulos {
+  color: #725de7;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    justify-items: baseline;
+    background-color: black;
+}
+
+.div-card-iframe {
+  padding-top: 0;
+}
+
+.card-body {
+    padding-left: 10px;
+    padding-top: 50px;
+    font-family: "Alan Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+}
+
+.card-title {
+    color: #725de7;
+    opacity: 50%;
+}
+
+.card-text {
+    color: rgb(177, 175, 175);
+    opacity: 50%;
+}
+
+.conclusao-section {     /* Faz a borda ficar rente ao conteúdo */
+  text-align: center;          /* Centraliza o texto */
+  color: #725de7;
+  opacity: 60%;
+  border: solid 2px #725de7;   /* Borda mais grossa para parecer botão */
+  border-radius: 8px;          /* Bordas mais arredondadas */
+  padding: 12px 20px;          /* Padding mínimo mas suficiente */
+  margin: 10px auto;           /* Centraliza o elemento */
+  cursor: pointer;             /* Cursor de pointer para parecer clicável */
+  transition: all 0.3s ease;   /* Transição suave para hover */
+}
+
+.conclusao-section:hover {
+  background-color: #725de7;   /* Fundo ao passar mouse */
+  color: white;                /* Texto branco no hover */
+  opacity: 100%;               /* Opacidade total no hover */
+  transform: translateY(-2px); /* Leve elevação */
+}
